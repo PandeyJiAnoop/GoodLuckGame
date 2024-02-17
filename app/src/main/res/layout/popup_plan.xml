@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00175A">
+        <TextView
+            android:id="@+id/tvRecordTypeSet"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn"
+            android:layout_height="50dp"
+            android:elevation="10dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="TENDER VALUE "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llTwo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvRecordTypeSet"
+            android:layout_marginTop="10dp"
+            android:background="#DA0F00"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="Plan" android:padding="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView                 android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Duration" android:padding="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView                 android:layout_gravity="center_vertical"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select" android:padding="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/llTwo"
+            android:id="@+id/plan_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/redone"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/idTVStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Mode"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--on below line we are creating a switch-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/idSwitch"
+            android:layout_gravity="center"
+            android:gravity="end"
+            app:trackTint="@color/white"
+            app:thumbTint="@color/green"/>
+    </LinearLayout>
+
+</LinearLayout>

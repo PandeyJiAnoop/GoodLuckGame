@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:padding="3sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/offer_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="50%"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circle_redborder" />
+    <ImageView
+        android:background="@drawable/circle_redborder"
+        android:id="@+id/img"   android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/off_b" />
+
+</LinearLayout>

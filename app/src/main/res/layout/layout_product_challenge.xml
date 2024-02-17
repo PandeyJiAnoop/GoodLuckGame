@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/tvNumCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:padding="10dp"
+        android:background="@drawable/back_white_sqare"/>
+
+    <TextView
+        android:id="@+id/tvProName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#8a8a8a"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"
+        android:background="@drawable/back_white_sqare"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#0C1E81"
+        android:elevation="5dp">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/ivProfile" android:visibility="gone"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:src="@drawable/a_logogif" />
+        <LinearLayout  android:layout_marginLeft="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:gravity="center_vertical">
+            <LinearLayout android:visibility="gone"
+                android:id="@+id/plan_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="1dp"
+                    android:src="@drawable/rs" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plan"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1.0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grey"
+                android:visibility="gone">
+
+            </View>
+
+            <LinearLayout
+
+                android:id="@+id/video_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="1dp"
+                    android:src="@drawable/a_youtube" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grey">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/winner_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="1dp"
+                    android:src="@drawable/a_winner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B-View"  android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grey">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/wallet_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:src="@drawable/a_wallet" />
+
+                <TextView
+                    android:id="@+id/wallet_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 00"  android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:id="@+id/profile_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="1dp"
+                    android:src="@drawable/a_profile" />
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"  android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red">
+        </View>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red">
+    </View>
+
+</RelativeLayout>

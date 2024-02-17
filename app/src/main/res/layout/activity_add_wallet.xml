@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/purple_500"
+            tools:ignore="NewApi">
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/purple_500">
+
+                <ImageView
+                    android:id="@+id/menuImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="17dp"
+                    android:layout_toRightOf="@id/menuImg"
+                    android:gravity="center_vertical"
+                    android:text="Raise Add Request"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rdGroup"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <RadioButton  android:textColor="@color/white"
+                    android:id="@+id/btc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="BTC"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton  android:textColor="@color/white"
+                    android:id="@+id/bnb"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="BNB"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/eth"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="ETH"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton  android:textColor="@color/white"
+                    android:id="@+id/usdt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="USDT"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <ImageView android:visibility="gone"
+                android:background="@color/white"
+                android:id="@+id/image_qr"
+                android:layout_width="match_parent"
+                android:src="@drawable/a_logo"
+                android:layout_marginTop="10dp"
+                android:layout_height="250dp">
+            </ImageView>
+            <TextView android:visibility="gone"
+                android:id="@+id/url_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#0972C5"
+                android:text="Upload Transaction Details"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:src="@drawable/addban"
+                android:layout_height="150dp">
+            </ImageView>
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Amount"
+                android:textColor="@color/white" />
+            <EditText
+                android:id="@+id/amount_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:hint="Enter  Amount" android:text="100"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:weightSum="5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@drawable/selectsizebackground"
+
+                    android:id="@+id/tvOne"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="+ ₹ 100"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvthree"
+
+                    android:padding="5dp"
+                    android:background="@drawable/backgroundd"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="+ ₹ 200"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvfour"
+
+                    android:padding="5dp"
+                    android:background="@drawable/backgroundd"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="+ ₹ 500"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvfive"
+
+                    android:padding="5dp"
+                    android:background="@drawable/backgroundd"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="+ ₹ 2000"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvthrees"
+                    android:padding="5dp"
+                    android:background="@drawable/backgroundd"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:text="+ ₹ 5000"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Select Type "
+                android:textColor="@color/white" />
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/radioSex"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="MAIN" android:textColor="@color/white"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="EWI" />
+                <RadioButton
+                    android:id="@+id/radiosmart"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="SMART" />
+
+            </RadioGroup>
+            <TextView android:layout_marginTop="5dp" android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="UTR Number "
+                android:textColor="@color/white" />
+            <EditText
+                android:id="@+id/transcation_number_et" android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:hint="Enter UTR number"
+                android:textColorHint="@color/grey"
+                android:singleLine="true" />
+            <TextView android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Transaction Date|Time"
+                android:textColor="@color/white" />
+            <EditText android:focusable="true"
+                android:clickable="true" android:visibility="gone"
+                android:id="@+id/date_time_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:hint="Enter date time"
+                android:singleLine="true" />
+            <TextView android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Upload Receipt"
+                android:textColor="@color/white" />
+            <LinearLayout android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:id="@+id/img_showProfile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="3dp"
+                    android:background="@drawable/s_about"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:id="@+id/select_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:text="Choose File"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg"
+                    android:textSize="12dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout android:visibility="gone"
+                android:backgroundTint="#000"
+                android:background="@drawable/rectangle"
+                android:layout_width="match_parent" android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <ImageView android:src="@drawable/alert_icon"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="50dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" android:id="@+id/marqueeText"
+                    android:gravity="center_vertical"
+                    android:text="गलत ट्रांजक्शन या गलत यूटीआर भेजने पर आपका आईडी नंबर ब्लॉक कर दिया  जाएगा।"
+                    android:textColor="@color/redone"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Add_button"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle_red"
+                android:text="Proceed To add Fund"
+                android:textColor="@color/white" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#0972C5"
+                android:text="Transaction History"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_below="@+id/header"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/all_member_ll"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/norecord_tv"
+                    android:layout_centerInParent="true"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/norecord"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

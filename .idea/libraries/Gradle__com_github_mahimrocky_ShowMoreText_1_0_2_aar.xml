@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mahimrocky:ShowMoreText:1.0.2@aar">
+    <CLASSES>
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/f921228ce0cfbb93a63b8bdba9e99c46/transformed/jetified-ShowMoreText-1.0.2/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/f921228ce0cfbb93a63b8bdba9e99c46/transformed/jetified-ShowMoreText-1.0.2/res" />
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/f921228ce0cfbb93a63b8bdba9e99c46/transformed/jetified-ShowMoreText-1.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/modules-2/files-2.1/com.github.mahimrocky/ShowMoreText/1.0.2/a16e9c3d81a91ba9a6769b457ae133754ab6992e/ShowMoreText-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

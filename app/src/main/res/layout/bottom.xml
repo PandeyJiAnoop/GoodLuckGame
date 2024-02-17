@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:id="@+id/social_ll"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/whatsap"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/whatsap"
+            
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView                          
+            android:id="@+id/youtube"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/youtube"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/details"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="8dp"
+            android:backgroundTint="#FF1100"
+            android:background="@drawable/circle"
+            android:src="@drawable/g_details"
+            app:layout_constraintStart_toStartOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="@+id/nav_view"
+            app:layout_constraintTop_toTopOf="@+id/nav_view"
+            app:layout_constraintBottom_toBottomOf="@+id/nav_view"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="8dp"
+            android:padding="5dp"
+            android:backgroundTint="#FFEB3B"
+            android:background="@drawable/circle"
+            android:src="@drawable/details"
+            app:layout_constraintStart_toStartOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="@+id/nav_view"
+            app:layout_constraintTop_toTopOf="@+id/nav_view"
+            app:layout_constraintBottom_toBottomOf="@+id/nav_view"/>
+
+
+        <ImageView
+            android:id="@+id/fb"
+            
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/fba"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/insta"
+            android:layout_height="40dp"
+            
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#A3000000"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/rectangle_gradient_pink"
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/buynow_btn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:src="@drawable/bhome"
+                android:tint="#fff"></ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/rectangle_gradient_pink"
+            android:layout_below="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:layout_marginLeft="5dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp" android:autoLink="web"
+                android:layout_alignParentLeft="true"
+                android:scrollHorizontally="true"
+                android:singleLine="true"  android:textColor="@color/black"
+                android:text="www.aoneshop.co.in"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"  android:autoLink="email"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="info@aoneshop.co.in"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

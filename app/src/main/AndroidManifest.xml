@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akp.aonestar">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="31" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+        android:exported="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/a_logo"
+        android:keepScreenOn="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTop"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/a_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RSJSS"
+        android:usesCleartextTraffic="true"
+        tools:node="merge">
+        <activity
+            android:name=".Coin.CoinPaymnet"
+            android:exported="false" />
+        <activity
+            android:name=".OrderTrack.Web_OderDetailsTracking"
+            android:exported="false" />
+        <activity
+            android:name=".MenuWebLink.Menu_Gallery"
+            android:exported="false" />
+        <activity
+            android:name=".PhonpayWeb.PhonePay_BasicPrimeCartPayment"
+            android:exported="false" />
+        <activity
+            android:name=".PhonpayWeb.PhonePay_EcommerceOrderPayment"
+            android:exported="false" />
+        <activity
+            android:name=".PhonpayWeb.PhonePay_AddWallet"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_OrderList"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_ProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_SubCategoryListAKP"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_SuCategoryListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.ZiimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".Basic.PhonePayPaymentGatway"
+            android:exported="false" />
+        <activity
+            android:name=".Basic.Header_BusinessExcelList"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".New_ShopIt.BP_PrimeTradeCartList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.PP_PrimeTradeCartList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.BP_SwingTradingProductReport"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.NewShopItOderDetailsTracking"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.NewShopItOrderList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.BasicPrimeCartPayment"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.PP_MychoiceCartList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.BP_MyChoiceCartList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.PP_BasicSwingProduct"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.PP_MyChoiceList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.BP_BasicSwingProduct"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.BP_MyChoiceList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.BP_BasicTradeProductList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.PP_PrimeTradeProductList"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.BP_WelcomeBasicGift"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.Prime_ResponseItem"
+            android:exported="false" />
+        <activity
+            android:name=".Ecommerce.E_Adress_PlaceOrder"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.PP_WelcomePrimeGift"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.ShopIt_BasicPackage"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.ShopIt_PrimePackageList"
+            android:exported="false" />
+        <activity
+            android:name=".Basic.NewUpdateAlert"
+            android:exported="false" />
+        <activity
+            android:name=".MenuWebLink.Menu_AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.SCANQRANDSUBMITDETAILS"
+            android:exported="false" />
+        <activity
+            android:name=".New_ShopIt.ShopIt_productBetting"
+            android:exported="false" />
+        <activity
+            android:name=".GoodLuckModule.NewTab.NewUpdate_GoodLuckProductList"
+            android:exported="false" />
+        <activity
+            android:name=".Basic.BChartFolder"
+            android:exported="false" />
+        <activity
+            android:name=".PlayBuyModule.SundaySpecial"
+            android:exported="true" />
+        <activity
+            android:name=".GoodLuckModule.ConsolationNew1"
+            android:exported="true" />
+        <activity
+            android:name=".GoodLuckModule.ConsolationNew"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.WalletTransferHistory"
+            android:exported="true" />
+        <activity
+            android:name=".GoodLuckModule.DoWantAnythingElse"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.OderDetailsTracking"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.WithdrawlRequestReportScreen"
+            android:exported="true" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuy_Oder_Summery_Details"
+            android:exported="true" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuy_Oder_PersonalDetails"
+            android:exported="true" />
+        <activity
+            android:name=".PriceDropModule.PriceDrop_Oder_PersonalDetails"
+            android:exported="true" />
+        <activity
+            android:name=".PriceDropModule.PriceDrop_Oder_Summery_Details"
+            android:exported="true" />
+        <activity
+            android:name=".Home.AddToCart"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.Oder_Summery_Details"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.Oder_PersonalDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".MyTeam.MyTotalTeamList"
+            android:exported="true" />
+        <activity
+            android:name=".MyTeam.ReferralPersonList"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.ReferEarnScreen"
+            android:exported="true" />
+        <activity
+            android:name=".PriceDropModule.PriceDropSearchCategoryDetails"
+            android:exported="true" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuyDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".PriceDropModule.PriceDropFloatingButtonGameDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.FloatingButtonGameDetails"
+            android:exported="true" />
+        <activity
+            android:name=".PriceDropModule.BidWinnerList"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.FullImagePage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceDropModule.PriceDropcategoryProductList"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.HeaderWinnerList"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.HeaderVideoScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Basic.MyOrderList"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IncomeReport.DDFDEMIChart"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IncomeReport.PlanPurchaseReport"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IncomeReport.LevelIncomeReport"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IncomeReport.DirectIncomeReport"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WalletReport.WalletHistory"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WalletReport.AddWallet"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.EditProfile"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceDropModule.PriceDropBuyBid"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceDropModule.PriceDropProductContentChalange"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceDropModule.PriceDropApnaMart"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceDropModule.PriceDropTrailProduct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceDropModule.PriceDropDashboard"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.SettingScreen"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShopSpotModule.ShopDropWelcome"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceDropModule.PriceDropWelcome"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuyWelcome"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.SignupScreen"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.LoginScreenAkp"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.ChooseDiscountProduct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.FreeTrailProductDetails"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.QuizJackpot"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.SeasonalSaleProduct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.DiscountProduct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.FreeTrailProduct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.ConsolationProduct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodLuckModule.FreeJoiningProduct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.GoodLuckGameProductView"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.Gamedashboard"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.GameWelcome"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Basic.GameSelection"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.DashBoard"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:imeOptions="flagNoExtractUi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".WalletActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:imeOptions="flagNoExtractUi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".TYpesGame"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:imeOptions="flagNoExtractUi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:imeOptions="flagNoExtractUi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:imeOptions="flagNoExtractUi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuyActivities.TossBossActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuyActivities.MatchAndGetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuyActivities.ForTheWinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlayBuyModule.PlayBuyActivities.ThreeInOneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".BackgroundSoundService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback">
+            <intent-filter>
+                <action android:name="com.example.app.START_BACKGROUND" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.akp.aonestar.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

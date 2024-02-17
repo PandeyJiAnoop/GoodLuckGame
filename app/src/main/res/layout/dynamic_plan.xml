@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lla"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/plan_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:text="300 * 12"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView             android:layout_gravity="center_vertical"
+
+            android:id="@+id/duration_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=" Week"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+
+            android:buttonTint="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/radioMale"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

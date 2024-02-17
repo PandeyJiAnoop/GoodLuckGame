@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anoop"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlBack"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:tint="@color/white"
+            android:src="@drawable/bgk"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Update Profile"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+
+            android:layout_toRightOf="@+id/ivBack"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Logout"
+            android:id="@+id/tvLogout"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_toRightOf="@+id/ivBack"
+            android:textColor="#FF1100"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+            <com.joooonho.SelectableRoundedImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:id="@+id/ivImnageProfile"
+                android:background="@drawable/userprofile"
+                app:sriv_border_color="#FFCC00"
+                app:sriv_border_width="2dp"
+                app:sriv_oval="true" />
+
+            <TextView
+                android:textColor="@color/red"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="Personal Profile"/>
+            <EditText                 android:id="@+id/edt_name"
+
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backgroundd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:imeOptions="flagNoExtractUi"
+
+                android:textColorHint="#8C8C8C"
+                android:textColor="@color/white"
+
+                android:hint="Name"/>
+            <EditText
+                android:imeOptions="flagNoExtractUi"
+
+                android:id="@+id/edt_number"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backgroundd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:inputType="phone"
+                android:textColorHint="#8C8C8C"
+                android:textColor="@color/white"
+                android:hint="Phone number"/>
+            <EditText
+
+                android:id="@+id/edt_Email"
+                android:textColorHint="#8C8C8C"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backgroundd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="flagNoExtractUi"
+
+                android:hint="Email"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/login_btn"
+                android:id="@+id/btnUpdate"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="45dp"
+                android:text="Update Profile"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

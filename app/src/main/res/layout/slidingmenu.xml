@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1F3EF"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/backgroundd"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/a_logogif"
+                    android:padding="15dp"
+                    android:layout_height="120dp">
+                </pl.droidsonroids.gif.GifImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Welcome To AoneStar Services" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+               android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="COMPANY" android:textStyle="bold"
+                android:textColor="@color/redone"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+                
+            </View> 
+            <TextView  android:textAllCaps="true" android:padding="5dp" 
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="About Us"
+                android:textColor="#000" 
+                android:id="@+id/abouttv"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Mission &amp; Vision"
+                android:textColor="#000" android:id="@+id/missiontv"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Certificate"
+                android:textColor="#000"
+                android:id="@+id/certificatetv"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Member Registration" android:id="@+id/carrertv"
+                android:textColor="#000"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Gallery" android:id="@+id/gallerytv"
+                android:textColor="#000"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Customer Review"
+                android:textColor="#000" android:id="@+id/customerreviewtv"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Referral Gift"
+                android:textColor="#000" android:id="@+id/referralgifttv"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Services" android:textStyle="bold"
+                android:textColor="@color/redone"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="ShopIt"
+                android:id="@+id/menu_shopit"
+                android:textColor="#000"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Shop On The SPOt"
+                android:textColor="#000" android:id="@+id/menu_spot"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Play and Buy"
+                android:textColor="#000" android:id="@+id/menu_playbuy"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Support" android:textStyle="bold"
+                android:textColor="@color/redone"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Privacy Policy"
+                android:textColor="#000" android:id="@+id/privacytv"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="Terms &amp; Use"
+                android:textColor="#000" android:id="@+id/termusetv"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+
+            </View>
+            <TextView  android:textAllCaps="true" android:padding="5dp"
+                android:drawableTint="@color/teal_700" android:drawableRight="@drawable/ic_navigate_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" android:id="@+id/shipingreturntv"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="SHipping &amp; Return"
+                android:textColor="#000"
+                android:textSize="13dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/teal_700"
+                android:layout_height="0.1dp">
+            </View>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

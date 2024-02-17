@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/rlLoginPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/a_game">
+    </pl.droidsonroids.gif.GifImageView>
+
+    <RelativeLayout
+        android:id="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        android:elevation="5dp">
+        <com.akp.aonestar.Basic.HeaderOnClick
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/header"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A1 STAR\nPRICE DROP PRODUCTS"
+                android:textColor="#e8cc77"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/gamethreegif"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ProgressBar
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:indeterminate="false"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:max="100"
+                    android:padding="3dp"
+                    android:progress="80"
+                    android:background="@drawable/progress_bar_background"
+                    android:progressDrawable="@drawable/curved_progress_bar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80%"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#A3000000"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgFooter"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"/>
+        <RelativeLayout
+            android:background="@drawable/rectangle_gradient_pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:scrollHorizontally="true"
+                android:singleLine="true"  android:textColor="@color/black"
+                android:text="www.aoneshop.co.in"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="info@aoneshop.co.in"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

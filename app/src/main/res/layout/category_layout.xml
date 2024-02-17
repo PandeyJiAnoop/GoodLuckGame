@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:padding="2dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageName"
+        android:layout_width="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="55dp"
+        android:src="@drawable/img_mobile"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/tvCatName"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_gravity="center"
+        android:textSize="11sp"
+        android:textColor="@color/white"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

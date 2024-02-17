@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+                <LinearLayout
+                    android:background="#171313"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/back_img"
+                        android:layout_width="45dp"
+                        android:padding="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_arrow_back"
+                        android:layout_height="45dp">
+                    </ImageView>
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="100dp"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="@color/grey"
+                            android:layout_height="100dp"
+                            android:background="@drawable/reg_img" />
+                        <ImageView
+                            android:id="@+id/iv_uploadimage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:padding="3dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/back_red_round"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/mobile_tv"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="demo@gmail.com"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:background="@drawable/bg"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="7dp"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Full Name"
+
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="7dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/mobile_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:clickable="false"
+                        android:enabled="false"
+
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="7dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Email Id"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/email_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:background="@null"
+
+
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:visibility="gone"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qualif"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:text="Qualification"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <Spinner
+                        android:id="@+id/sp_Gender"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_qualification"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Registration Date"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <Spinner
+                        android:id="@+id/sp_state"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/reg_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+
+
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Pincode"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/pin_code_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+
+
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="7dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="City"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <Spinner
+                        android:id="@+id/sp_City"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/city_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+
+
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="State"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:id="@+id/state_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="UPI Id"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:id="@+id/upiid_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+
+
+
+
+
+                    <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="7dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Account Number"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/AccountNumbertv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:background="@null"
+
+
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="7dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Pan Number"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/Pantv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:background="@null"
+
+
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Bank Name"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText android:paddingLeft="10dp"
+                        android:id="@+id/BankNametv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+
+
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Account Holder Name"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:id="@+id/AccountHolderNametv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Ifsc Code"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:id="@+id/IfscCodetv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Branch Name"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="0.1dp"
+                        android:background="#8E8E8E"
+                        android:layout_height="30dp">
+                    </View>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:id="@+id/BranchNametv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:hint="N/A" android:textColorHint="@color/grey"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#8E8E8E"
+                    android:layout_height="0.1dp">
+
+                </View>
+
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_submit"
+                android:background="@drawable/probutton"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="220dp"
+                android:layout_marginBottom="25dp"
+                android:layout_height="55dp"
+                android:text="Update Record"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

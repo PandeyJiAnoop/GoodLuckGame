@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "878926137184",
+    "firebase_url": "https://aonestar-2dcdc-default-rtdb.firebaseio.com",
+    "project_id": "aonestar-2dcdc",
+    "storage_bucket": "aonestar-2dcdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878926137184:android:c7f6d4ecabead89f9d4005",
+        "android_client_info": {
+          "package_name": "com.akp.aonestar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878926137184-psnqgvi2rs9lqs9phbucsu44681lq6ep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akp.aonestar",
+            "certificate_hash": "4db9b4aba42d20c77aa1e57e61e8c02016246964"
+          }
+        },
+        {
+          "client_id": "878926137184-agmpn1l1709ndn0i0b5gb9tbcuvov9ii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvuRxLzvUKE3L_cUPT_LSSgprqLOG11lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878926137184-agmpn1l1709ndn0i0b5gb9tbcuvov9ii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

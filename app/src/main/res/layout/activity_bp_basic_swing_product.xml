@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/a_game"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        android:elevation="5dp">
+        <com.akp.aonestar.Basic.HeaderOnClick
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/header"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/header_rl"
+        android:id="@+id/webrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <WebView android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </WebView>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/red"
+            android:layout_height="2dp">
+        </View>
+        <LinearLayout  android:background="#032359"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/smartwallet_img"
+                android:layout_width="110dp"
+                android:src="@drawable/s_wallet_btn"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <TextView
+                android:id="@+id/title_tv"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:text="* RETAIL TRADING  FROM A1 STAR *"
+                android:textColor="#FEEB19"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/webrl"
+        android:layout_above="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout android:visibility="gone"
+                android:layout_width="match_parent"
+                android:alpha=".9"
+                android:layout_height="150dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_slider_mainActivity"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="7dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/banner_rl1">
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/pager1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true" />
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:padding="3dp"
+                android:background="#CC100F0F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRecord">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="100dp"
+                        android:src="@drawable/s_pro_btn"
+                        android:layout_height="40dp">
+                    </ImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="80dp"
+                    android:src="@drawable/s_buy_btn"
+                    android:layout_height="40dp">
+                </ImageView>
+
+                <ImageView android:layout_gravity="center_vertical"
+                    android:layout_width="80dp"
+                    android:src="@drawable/s_sell_btn"
+                    android:layout_height="40dp">
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/all_bets_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.akp.aonestar.Basic.BottomOnClick android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

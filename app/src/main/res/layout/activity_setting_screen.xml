@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginType.MainActivity">
+        <androidx.cardview.widget.CardView
+            app:cardElevation="20dp"
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RelativeLayout android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:tint="@color/white"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back" />
+                <TextView
+                    android:id="@+id/header_title"
+                    android:text="Account"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="21dp"
+                    android:textStyle="bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_below="@+id/rlHeader"
+            android:id="@+id/swipe_home_container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <androidx.core.widget.NestedScrollView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        >
+                        <androidx.coordinatorlayout.widget.CoordinatorLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_image"
+                                android:layout_width="80dp"
+                                app:civ_border_width="4dp"
+                                app:civ_border_color="@color/grey"
+                                android:layout_height="80dp"
+                                android:background="@drawable/reg_img" />
+                            <ImageView android:visibility="gone"
+                                android:id="@+id/iv_uploadimage"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:padding="3dp"
+                                android:layout_gravity="bottom|right"
+                                android:background="@drawable/back_red_round"
+                                android:src="@android:drawable/ic_menu_edit" />
+                        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                        <TextView android:visibility="gone"
+                            android:id="@+id/first_name_tv"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="4dp"
+                            android:backgroundTint="@color/red"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/circle"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="5dp"
+                            android:text="AP"
+                            android:textAllCaps="true"
+                            android:maxLength="2"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            android:textSize="32sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mobile_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:gravity="center_vertical"
+                                android:text="+91-0000000"
+                                android:textSize="18dp"
+                                android:textColor="@color/white" android:textStyle="bold"
+                                android:layout_marginLeft="16dp" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:id="@+id/name_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:gravity="center_vertical"
+                                android:text="NA"
+                                android:textSize="16dp"
+                                android:textColor="@color/teal_200"
+                                android:layout_marginLeft="16dp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/order_ll"
+                        android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp" android:tint="@color/white"
+                            android:src="@drawable/das_e" />
+                        <TextView
+                            android:layout_width="0dp" android:textSize="18dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical"
+                            android:text="Plan Purchase List"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/mpin_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@android:drawable/ic_input_get" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical"
+                            android:text="Change MPIN Password"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/cart_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/cart" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="My Cart"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/Withdraw_history_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/banknumber" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Withdraw Request Report"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/walletTransfer_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/bhome" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Wallet Transfer History"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/myorderr_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/das_d" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Order Details"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/myorderr_ll_shopit"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/das_d" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Order Details-ShopIt"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/tradingProductreport_shopit"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/das_d" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Trading Product Report"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/ecom_orderlist_shopit"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/das_d" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Ecommerce Order List"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/edit_profile_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/s_edit" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Edit Profile"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:id="@+id/directincome_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/wallet_money" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Direct Income Report"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/levelincome_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/wallet" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical"
+                            android:text="Level Team Report" android:textSize="18dp"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"   android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/all_team_ll"
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:paddingLeft="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/teamwork" />
+                            <TextView  android:drawableRight="@drawable/ic_navigate_next"
+                                android:id="@+id/referperson_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="true"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:text="My Team"
+                                android:textSize="18dp"
+                                android:textColor="@color/white" android:textStyle="bold"
+                                android:layout_marginLeft="16dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout android:visibility="gone"
+                            android:id="@+id/team_referral_ll"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="0.1dp">
+                            </View>
+
+                            <LinearLayout
+                                android:padding="5dp"
+
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/myreferal_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center_vertical"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="My Referral"
+                                    android:padding="5dp"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/white" android:textStyle="bold"
+                                    android:layout_marginLeft="16dp"
+                                    />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="0.1dp">
+                            </View>
+                            <LinearLayout
+                                android:padding="5dp"
+
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:id="@+id/my_team_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center_vertical"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="My Total Team"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/white" android:textStyle="bold"
+                                    android:layout_marginLeft="16dp"
+                                    />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="0.1dp">
+                            </View>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/refer_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp" android:tint="@color/redone"
+                            android:src="@android:drawable/ic_menu_share" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Refer &amp; Share App"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/term_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/s_about" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Term &amp; Conditions"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/privacy_policy_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/s_privacypolicy" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5" android:textSize="18dp"
+                            android:gravity="center_vertical"
+                            android:text="Privacy Policy"
+                            android:textColor="@color/white" android:textStyle="bold"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout android:background="@drawable/bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/logout_ll"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:tint="@color/redone"
+                            android:src="@android:drawable/ic_lock_power_off" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="5"
+                            android:gravity="center_vertical"
+                            android:text="Logout"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
